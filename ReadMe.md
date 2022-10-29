@@ -41,9 +41,9 @@
 ## Установка
 1. Развернуть проекты баз данных DateTemplate и DQS_STAGING_DATA
 2. Развернуть проект ETL
-3. Импортировать [базу знаний DQS](https://github.com/zinykov/DateTemplate/DQS)
+3. Импортировать [базу знаний DQS](https://github.com/zinykov/DateDimension/tree/master/DQS)
  в соответствии с описанием в [документации](https://learn.microsoft.com/ru-ru/sql/data-quality-services/import-a-knowledge-base-from-a-dqs-file?view=sql-server-ver16)
-4. Развернуть [модель MDS](https://github.com/zinykov/DateTemplate/MDS)
+4. Развернуть [модель MDS](https://github.com/zinykov/DateDimension/tree/master/MDS)
  в соответсвии с описанием в [документации](https://learn.microsoft.com/ru-ru/sql/master-data-services/deploy-a-model-deployment-package-by-using-the-wizard?view=sql-server-ver16)
 5. Создать представление MasterHildays
  в соответсвии с описанием в [документации](https://learn.microsoft.com/ru-ru/sql/master-data-services/create-a-subscription-view-to-export-data-master-data-services?view=sql-server-ver16)
