@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DQS"
+  DTS:DTSID="{CA9B4912-FF79-4896-8822-7340335FA2BD}"
+  DTS:CreationName="DQS">
+  <DTS:ObjectData>
+    <InnerObject>
+      <ServerName
+        Type="8"
+        Value="SWIFT3" />
+      <TargetServerVersion
+        Type="3"
+        Value="160" />
+    </InnerObject>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

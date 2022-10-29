@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MDS"
+  DTS:DTSID="{45132A4A-D59F-44D1-A7C2-5D8EAC64D92B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=MDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{45132A4A-D59F-44D1-A7C2-5D8EAC64D92B}SWIFT3.MDS;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
