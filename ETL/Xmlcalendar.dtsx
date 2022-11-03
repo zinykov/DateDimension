@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="10/27/2022 1:23:07 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="xmlcalendar"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{623A38B8-FEA8-4DAF-9B6B-75D22A8E248C}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{393502C1-89D1-404B-8C7F-F8ABB643DA22}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:LogProviders>
@@ -183,7 +183,7 @@
       DTS:refId="Package\Update local repository"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Задача &quot;Выполнение процесса&quot;"
-      DTS:DTSID="{CCF779A3-123D-41EF-8F15-AAADA4E4189B}"
+      DTS:DTSID="{8657d332-57b6-4244-a8da-1b6e57a7c4e0}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Update local repository"
@@ -193,8 +193,10 @@
         DTS:FilterKind="0" />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
-          Arguments="Set-Location -Path &quot;C:\Users\zinyk\source\repos\xmlcalendar&quot; | git pull" />
+          Executable="PowerShell.exe"
+          Arguments="git pull"
+          WorkingDirectory="C:\SSIS\xmlcalendar"
+          WindowStyle="Hidden" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1489,7 +1491,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{B838B45A-7679-4CC6-A0CC-B86FB962662B}"
+      DTS:DTSID="{BFF43AFF-071A-4D3A-BB17-FE3D4D00F1B9}"
       DTS:From="Package\Update local repository"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1581,34 +1583,34 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="187,42"
-          Id="Package\Update local repository"
-          TopLeft="66,39" />
-        <NodeLayout
           Size="155,42"
           Id="Package\xmlcalendar foreach loop\Load to Landing"
           TopLeft="5.5,5.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="166,103"
+          PanelSize="166,102"
           Size="166,146"
           Id="Package\xmlcalendar foreach loop"
-          TopLeft="70,156.5" />
+          TopLeft="74,156.5" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Update local repository"
+          TopLeft="63.5,54.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="156.25,81">
+          TopLeft="157,96.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,75.5"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,68">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,68" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
